@@ -10,7 +10,7 @@ int side = qMin(OGLWidget::width(), OGLWidget::height());
    glHint( GL_POLYGON_SMOOTH_HINT, GL_NICEST );
    glHint(GL_POLYGON_SMOOTH_HINT, GL_NICEST);
    glPolygonMode(GL_FRONT, GL_FILL);
-   glViewport((OGLWidget::width() - side) / 2, (OGLWidget::height(), - side) / 2, side, side);
+   glViewport((OGLWidget::width() - side) / 2, (OGLWidget::height() - side) / 2, side, side);
    glMatrixMode(GL_PROJECTION);
    glOrtho(0, OGLWidget::width(), OGLWidget::height(), 0,0, 1);
 
